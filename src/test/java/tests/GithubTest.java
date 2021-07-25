@@ -15,7 +15,6 @@ public class GithubTest extends BaseTest {
         Selenide.open("https://github.com/selenide/selenide");
         $("#wiki-tab").click();
         $("#wiki-body").$(byText("Soft assertions")).shouldBe(visible).click();
-        //*[text()='Or register extension inside test class:']//following-sibling::div
         $(byText("Or register extension inside test class:")).sibling(0)
                 .shouldHave(Condition.cssClass("highlight-source-java")).shouldBe(visible);
     }
