@@ -8,6 +8,6 @@ public class BaseTest {
     @BeforeAll
     static void setUp(){
         Configuration.startMaximized = true;
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
     }
 }
