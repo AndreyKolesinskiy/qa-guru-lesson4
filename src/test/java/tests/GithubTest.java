@@ -16,8 +16,9 @@ public class GithubTest extends BaseTest {
         $("#wiki-pages-box").$(".js-wiki-more-pages-link").click();
         $("#wiki-pages-box").$(byText("SoftAssertions")).click();
         $(byText("Using JUnit5 extend test class:")).shouldBe(visible);
-        //Fist test commit
-        //Second test commit
-        //Third test commit
+        //Fist commit
+        //Second commit
+        //Third commit
+
     }
 }
